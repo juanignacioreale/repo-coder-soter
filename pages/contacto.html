@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--TITTLE-->
+    <title>Soter</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">
+                <img id="logo" src="../img/SOTER-LOGO-FINAL.png" alt="logo de soter">
+            </a>
+            <ul class="menu">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="#">CALENDARIO</a></li>
+                <li><a class="active" href="contacto.html">CONTACTO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="#">PERFIL</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <form action="" method="post">
+            <h1 class="contact-tittle">Consulta sobre el calendario deportivo</h1>
+            <div class="center-div">
+                <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="tipo">Tipo de consulta</label>
+            <select id="tipo" name="tipo">
+                <option value="partidos">Modificación de entrenamiento</option>
+                <option value="equipos">Horarios de entrenamiento</option>
+                <option value="entradas">Ser entrenador</option>
+                <option value="otro">Otro</option>
+            </select>
+        
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <div class="center-div">
+                <button type="submit">Enviar consulta</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <img class="logo-footer" src="../img/SOTER-LOGO-FINAL.png" alt="logo de soter">
+        </div>
+        <div>
+            <h3 class="footer-tittles">Links útiles</h3>
+            <ul>
+                <li><a href="pages/contacto.html">CONTACTO</a></li>
+                <li><a href="pages/nosotros.html">NOSOTROS</a></li>
+                <li><a href="pages/perfil.html">PERFIL</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="footer-tittles">Nuestras redes</h3>
+            <ul class="social-links">
+                <li><a href="#"><img src="../img/instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="../img/x.png" alt="X"></a></li>
+                <li><a href="#"><img src="../img/tiktok.png" alt="TikTok"></a></li>
+                <li><a href="#"><img src="../img/facebook.png" alt="Facebook"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
