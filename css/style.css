@@ -1,15 +1,15 @@
 /*
             REM
-unidad de medida por default en HTML = 16px
+unidad de medida por default en HTML = 1rem
 POR LO TANTO
-1rem = 16px
-0.5rem = 8px
-2rem = 32px
+16px = 1rem
+8px = .5rem
+32px = 2rem
 
             EM
 la declaramos nosotros en el reset CSS
-ej: 1em = 10px (suponiendo que puse eso de font size en el reset)
-    2em = 20px
+ej: 1em = .625rem (suponiendo que puse eso de font size en el reset)
+    2em = 1.25rem
 */
 
 /* 
@@ -24,7 +24,7 @@ AZUL MARINO: #1E3888
 *{
     margin: 0;
     padding: 0;
-    font-size: 12px; /* <--- este seria el tamaño referencia para EM*/
+    font-size: .88rem; /* <--- este seria el tamaño referencia para EM*/
 }
 
 /* CLASES */
@@ -32,7 +32,7 @@ AZUL MARINO: #1E3888
 .subtittles{
     font-family: "Raleway", sans-serif;
     font-size: 4em;
-    padding:40px;
+    padding:2.5rem;
     text-align: center;
     color: #27AE60;
     text-transform: uppercase;
@@ -44,69 +44,93 @@ AZUL MARINO: #1E3888
 }
 
 strong{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .padding-section{
-    padding: 40px ;
+    padding: 2.5rem ;
 }
 
 /*NAVBAR*/
-header{
-    background-color: #000000;
-}
 
 #logo { 
-    width: 100px;
+    width: 6.25rem;
     display: block;
     margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: .625rem;
+
 }
 
-.menu{
+.navbar-container {
+    flex-shrink: 0; 
+}
+
+.navbar-nav{
     width: 100%;
     height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    list-style: none;
+    padding: 0;       
+    margin: 0;
 }
 
 
-.menu li a{
+.navbar-nav a{
     text-decoration: none;
     font-family: "Bebas Neue", sans-serif;
     font-size: 1.5em;
     color: white;
-    letter-spacing: 2.16px;
+    letter-spacing: .135rem;
 }
 
+.navbar-nav a:hover{
+    color: rgba(206, 206, 206, 0.699) !important;
+}
+
+
 .active{
-    border-bottom: 1px solid #27AE60;
+    border-bottom: .1875rem solid #27AE60 !important;
+    color: #ffffff !important;
 }
 
 /* BANNER */
 
 #banner {
-    background-image: url('../img/arquero1.jpeg');
+    background-image: url('../img/arquero2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
-    height: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    flex-grow: 1;
+    text-align: center; 
+}
+
 
 #bannerTittle{
     color: #ddd;
     font-family: "Bebas Neue", sans-serif;
     font-size: 5em;
-    margin-left: 0.6em;
-    padding-top: 2.3em;
 }
 
 .highlight{
     color: #27AE60;
-    font-size: 60px;
-    text-shadow: 4px 4px 2px rgba(43, 156, 52, 0.349);
+    font-size: 4.4rem;
+    text-shadow: .25rem .25rem .125rem rgba(43, 156, 52, 0.349);
+}
+
+#header__secondary{
+    background-color: #212529;
 }
 
 
@@ -121,9 +145,9 @@ header{
 }
 
 .calendar th, .calendar td {
-    border: 1px solid #ddd;
+    border: .0625rem solid #ddd;
     text-align: center;
-    padding: 10px;
+    padding: .625rem;
 }
 
 .calendar th {
@@ -132,7 +156,7 @@ header{
 }
 
 .calendar td {
-    height: 80px;
+    height: 5rem;
 }
 
 .hoy {
@@ -158,7 +182,7 @@ header{
     margin: 0 auto;
     height: auto;
     display: block;
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    box-shadow: 0 .25rem .5rem rgb(0, 0, 0);
 }
 
 .why-soter article {
@@ -167,14 +191,14 @@ header{
 }
 
 .border-image{
-    border-radius: 8px;
+    border-radius: .5rem;
 
 }
 
 /* PROFESIONAL SECCION */
 
 .margin-profesional{
-    margin-left: 30px;
+    margin-left: 1.875rem;
 }
 
 /* FOOTER */
@@ -183,27 +207,27 @@ footer {
     justify-content: space-around;
     background-color: #000000;
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .footer-tittles{
     font-family: "Bebas Neue", sans-serif ;
     font-size: 1.5em;
-    letter-spacing: 2px;
+    letter-spacing: .125rem;
 }
 
 footer div {
     
-    margin: 0 10px;
+    margin: 0 .625rem;
 }
 
 .logo-footer{
-    max-width: 100px;
+    max-width: 6.25rem;
 }
 
 footer h3 {
-    margin-bottom: 10px;
+    margin-bottom: .625rem;
 }
 
 footer ul {
@@ -212,7 +236,7 @@ footer ul {
 }
 
 footer ul li {
-    margin-bottom: 8px;
+    margin-bottom: .5rem;
     font-family: "Roboto",  sans-serif;
 }
 
@@ -232,12 +256,12 @@ footer a {
 .social-links li {
     width: 40%;
     text-align: center;
-    margin-bottom: 15px; 
+    margin-bottom: .9375rem; 
 }
 
 .social-links img {
-    width: 30px; 
-    height: 30px;
+    width: 1.875rem; 
+    height: 1.875rem;
     object-fit: contain; 
 }
 
@@ -247,25 +271,25 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #f4f4f4;
     height: 100vh;
 }
 
 form {
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    border-radius: .5rem;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px;
+    max-width: 37.5rem;
 }
 
 .contact-tittle {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-size: 1.8em;
     color: #333;
 }
@@ -273,17 +297,17 @@ form {
 label {
     font-family: "Roboto";
     display: block;
-    margin: 10px 0 5px;
+    margin: .625rem 0 .3125rem;
     font-size: 1em;
     color: #555;
 }
 
 input, select, textarea {
     width: 90%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: .625rem;
+    margin-bottom: .9375rem;
+    border: .0625rem solid #ddd;
+    border-radius: .25rem;
     font-size: 1em;
     color: #333;
 }
@@ -299,10 +323,10 @@ textarea {
 button {
     background-color: #27AE60;
     color: #fff;
-    padding: 10px 20px;
+    padding: .625rem 1.25rem;
     font-size: 1em;
     border: none;
-    border-radius: 4px;
+    border-radius: .25rem;
     cursor: pointer;
     width: 30%;
 }
@@ -314,7 +338,7 @@ button:hover {
 /* NOSOTROS */
 
 .about-main {
-    padding: 40px;
+    padding: 2.5rem;
     background-color: #f9f9f9;
 }
 
@@ -331,15 +355,15 @@ button:hover {
     font-size: 1.2em;
     color: #2b2b2b;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .about-story {
     background-color: #fff;
-    padding: 20px;
-    margin-bottom: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    margin-bottom: 2.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
 }
 
 .story-content {
@@ -356,23 +380,47 @@ button:hover {
 
 .story-image {
     width: 35%;
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 .story-image img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: .5rem;
 }
 
 .about-mission {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    border-radius: .5rem;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
 }
 
 .mission-content {
     color: #333;
     line-height: 1.6;
+}
+
+/*MODIFICACIONES BOOTSTRAP*/
+.navbar-toggler {
+    border: none !important; 
+}
+
+button:hover {
+    background-color: transparent !important;
+}
+
+.navbar-toggler {
+    padding: 0 !important; 
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+.fa-stopwatch{
+    width: 100px;
+    height: 100px;
 }
