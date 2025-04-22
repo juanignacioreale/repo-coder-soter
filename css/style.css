@@ -246,9 +246,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.25rem;
-    background-color: #f4f4f4;
-    height: 100vh;
 }
 
 form {
@@ -295,8 +292,8 @@ textarea {
     text-align: center;
 }
 
-button {
-    background-color: #27AE60;
+.submit-button {
+    background-color: #27AE60 !important;
     color: #fff;
     padding: .625rem 1.25rem;
     font-size: 1em;
@@ -306,8 +303,8 @@ button {
     width: 30%;
 }
 
-button:hover {
-    background-color: #81be9a;
+.submit-button:hover {
+    background-color: #079e46 !important;
 }
 
 /* NOSOTROS */
@@ -393,4 +390,12 @@ button:hover {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     width: 2rem !important;
     height: 2rem !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #baffd7 !important;
 }
