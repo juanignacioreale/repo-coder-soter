@@ -1,21 +1,37 @@
 // _mixings.scss
 @use 'variables';
-@mixin flex-center {
+@mixin card-box {
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: .5rem;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  @mixin section-title {
+    font-family: variables.$font-family-raleway;
+    font-size: 4em;
+    text-align: center;
+    color: variables.$primary-color;
+    text-transform: uppercase;
+  }
+  
+  @mixin flex-center($justify: center, $align: center) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: $justify;
+    align-items: $align;
   }
   
-  @mixin button-style($bg-color) {
-    background-color: $bg-color;
-    color: white;
-    padding: .625rem 1.25rem;
-    font-size: 1em;
-    border-radius: .25rem;
-    cursor: pointer;
+  @mixin responsive-img($radius: .5rem) {
+    width: 100%;
+    height: auto;
+    border-radius: $radius;
+    object-fit: cover;
   }
   
-  @mixin box-shadow {
-    box-shadow: 0 .25rem .5rem $shadow-color;
+  @mixin subtitle-style {
+    font-family: variables.$font-family-roboto;
+    font-size: 1.2em;
+    color: variables.$font-color-dark;
+    text-align: center;
+    margin-bottom: 1.25rem;
   }
-  

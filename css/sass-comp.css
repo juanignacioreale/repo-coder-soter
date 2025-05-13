@@ -70,47 +70,6 @@ button:hover {
   background-color: #baffd7 !important;
 }
 
-/* NAVBAR */
-#logo {
-  width: 6.25rem;
-  display: block;
-  margin: 0 auto;
-  padding-top: 0.625rem;
-}
-
-.navbar-container {
-  flex-shrink: 0;
-}
-
-.navbar-nav {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar-nav a {
-  text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 1.5em;
-  color: white;
-  letter-spacing: 0.135rem;
-}
-
-.navbar-nav a:hover {
-  color: rgba(206, 206, 206, 0.699) !important;
-}
-
-.active {
-  border-bottom: 0.1875rem solid #27AE60 !important;
-  color: #ffffff !important;
-}
-
-/* BANNER */
 #banner {
   background-image: url("../img/arquero2.jpg");
   background-size: cover;
@@ -120,8 +79,7 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
-
-.title-container {
+#banner .title-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,43 +87,15 @@ button:hover {
   flex-grow: 1;
   text-align: center;
 }
-
-#bannerTittle {
+#banner .title-container #bannerTittle {
   color: #ddd;
   font-family: "Bebas Neue", sans-serif;
   font-size: 5em;
 }
-
-.highlight {
+#banner .title-container #bannerTittle .highlight {
   color: #27AE60;
-  font-size: 4.4rem;
+  font-size: #27AE60;
   text-shadow: 0.25rem 0.25rem 0.125rem rgba(43, 156, 52, 0.349);
-}
-
-/* FOOTER */
-footer {
-  background-color: #000;
-}
-
-.footer-tittles {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 1.5em;
-  letter-spacing: 0.125rem;
-}
-
-.logo-footer {
-  max-width: 6.25rem;
-}
-
-.social-links img {
-  width: 1.875rem;
-  height: 1.875rem;
-  object-fit: contain;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
 }
 
 /* SECCION DE LAS CARDS */
@@ -237,6 +167,177 @@ footer a {
 
 .border-image {
   border-radius: 0.5rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact form {
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 37.5rem;
+}
+.contact form .contact-tittle {
+  font-family: "Raleway", sans-serif;
+  font-size: 4em;
+  text-align: center;
+  color: #27AE60;
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+.contact form label {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  margin: 0.625rem 0 0.3125rem;
+  font-size: 1em;
+  color: #555;
+}
+.contact form input,
+.contact form select,
+.contact form textarea {
+  width: 90%;
+  padding: 0.625rem;
+  margin-bottom: 0.9375rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.25rem;
+  font-size: 1em;
+  color: #333;
+}
+.contact form textarea {
+  resize: none;
+}
+.contact form .center-div {
+  text-align: center;
+}
+.contact form .submit-button {
+  background-color: #27AE60 !important;
+  color: #fff;
+  padding: 0.625rem 1.25rem;
+  font-size: 1em;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 30%;
+  transition: background-color 0.3s ease;
+}
+.contact form .submit-button:hover {
+  background-color: #00722f !important;
+}
+
+.about-main {
+  padding: 2.5rem;
+  background-color: #f9f9f9;
+}
+
+.subtittle-about {
+  font-family: "Raleway", sans-serif;
+  font-size: 4em;
+  text-align: center;
+  color: #27AE60;
+  text-transform: uppercase;
+}
+
+.about-story {
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.5rem;
+}
+.about-story .story-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-story .story-image {
+  width: 35%;
+  padding-left: 1.25rem;
+}
+.about-story .story-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.about-mission {
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.about-mission .mission-content {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+#logo {
+  width: 6.25rem;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0.625rem;
+}
+
+.navbar-container {
+  flex-shrink: 0;
+}
+
+.navbar-nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar-nav a {
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5em;
+  color: white;
+  letter-spacing: 0.135rem;
+}
+.navbar-nav a:hover {
+  color: rgba(206, 206, 206, 0.699) !important;
+}
+
+.active {
+  border-bottom: 0.1875rem solid #27AE60 !important;
+  color: #ffffff !important;
+}
+
+#header__secondary {
+  background-color: #212529;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .footer-tittles {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 0.125rem;
+}
+footer .logo-footer {
+  max-width: 6.25rem;
+}
+footer .social-links img {
+  width: 1.875rem;
+  height: 1.875rem;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=sass-comp.css.map */

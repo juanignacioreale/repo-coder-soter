@@ -1,73 +1,74 @@
 // _layout.scss
+
 @use 'variables';
 
-/* SECCION DE LAS CARDS */
-.icon-circle {
-    width: 80px;
-    height: 80px;
-    background-color: variables.$light-bg; // Prefijo 'variables.'
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-title {
-    font-family: variables.$font-family-raleway !important; // Prefijo 'variables.'
-}
-
-.calendar {
-    width: 100%;
-    max-width: 80vw;
-    margin: auto;
-    font-family: Arial, sans-serif;
-}
-
-.calendar th, .calendar td {
-    border: .0625rem solid #ddd;
-    text-align: center;
-    padding: variables.$card-padding; // Prefijo 'variables.'
-}
-
-.calendar th {
-    background-color: variables.$dark-bg; // Prefijo 'variables.'
-    color: white;
-}
-
-.calendar td {
-    height: 5rem;
-}
-
-.hoy {
-    background-color: variables.$primary-color; // Prefijo 'variables.'
-    color: white;
-    font-weight: bold;
-}
-
-/* ¿POR QUE SOTER? */
-.why-soter {
-    display: flex;
-    align-items: start; 
-}
-
-.why-soter figure {
-    display: inline-block;
-    max-width: 40%;
-}
-
-.why-soter img {
-    width: 90%;
-    margin: 0 auto;
-    height: auto;
+/* NAVBAR */
+#logo { 
+    width: 6.25rem;
     display: block;
-    box-shadow: 0 .25rem .5rem rgb(0, 0, 0);
+    margin: 0 auto;
+    padding-top: .625rem;
 }
 
-.why-soter article {
-    display: inline-block;
-    width: 55%;
+.navbar-container {
+    flex-shrink: 0; 
 }
 
-.border-image {
-    border-radius: variables.$border-radius; // Prefijo 'variables.'
+.navbar-nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;       
+    margin: 0;
+  
+    a {
+      text-decoration: none;
+      font-family: variables.$font-family-bebas;
+      font-size: 1.5em;
+      color: white;
+      letter-spacing: .135rem;
+  
+      &:hover {
+        color: rgba(206, 206, 206, 0.699) !important;
+      }
+    }
+  }
+
+.active {
+    border-bottom: .1875rem solid variables.$primary-color !important; 
+    color: #ffffff !important;
+}
+
+
+#header__secondary{
+    background-color: #212529;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer-tittles {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .125rem;
+  }
+
+  .logo-footer {
+    max-width: 6.25rem;
+  }
+
+  .social-links img {
+    width: 1.875rem;
+    height: 1.875rem;
+    object-fit: contain;
+  }
 }

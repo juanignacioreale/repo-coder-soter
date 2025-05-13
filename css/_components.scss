@@ -1,100 +1,207 @@
 // _components.scss
 @use 'variables';
+@use 'mixings';
 
-/* NAVBAR */
-#logo { 
-    width: 6.25rem;
-    display: block;
-    margin: 0 auto;
-    padding-top: .625rem;
-}
-
-.navbar-container {
-    flex-shrink: 0; 
-}
-
-.navbar-nav {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    padding: 0;       
-    margin: 0;
-}
-
-.navbar-nav a {
-    text-decoration: none;
-    font-family: variables.$font-family-bebas;  // Prefijo 'variables.'
-    font-size: 1.5em;
-    color: white;
-    letter-spacing: .135rem;
-}
-
-.navbar-nav a:hover {
-    color: rgba(206, 206, 206, 0.699) !important;
-}
-
-.active {
-    border-bottom: .1875rem solid variables.$primary-color !important; // Prefijo 'variables.'
-    color: #ffffff !important;
-}
-
-/* BANNER */
 #banner {
     background-image: url('../img/arquero2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
-}
+  
+    .title-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      text-align: center;
+  
+      #bannerTittle {
+        color: variables.$secondary-color;
+        font-family: variables.$font-family-bebas;
+        font-size: variables.$font-size-heading;
+  
+        .highlight {
+          color: variables.$primary-color;
+          font-size: variables.$primary-color;
+          text-shadow: 0.25rem 0.25rem 0.125rem rgba(43, 156, 52, 0.349);
+        }
+      }
+    }
+  }
+  
 
-.title-container {
+/* SECCION DE LAS CARDS */
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: variables.$light-bg; 
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    flex-grow: 1;
-    text-align: center; 
+    justify-content: center;
+    align-items: center;
 }
 
-#bannerTittle {
-    color: variables.$secondary-color; // Prefijo 'variables.'
-    font-family: variables.$font-family-bebas; // Prefijo 'variables.'
-    font-size: variables.$font-size-heading; // Prefijo 'variables.'
+.card-title {
+    font-family: variables.$font-family-raleway !important; 
 }
 
-.highlight {
-    color: variables.$primary-color; // Prefijo 'variables.'
-    font-size: variables.$font-size-highlight; // Prefijo 'variables.'
-    text-shadow: .25rem .25rem .125rem rgba(43, 156, 52, 0.349);
+.calendar {
+    width: 100%;
+    max-width: 80vw;
+    margin: auto;
+    font-family: Arial, sans-serif;
 }
 
-/* FOOTER */
-footer {
-    background-color: #000;
+.calendar th, .calendar td {
+    border: .0625rem solid #ddd;
+    text-align: center;
+    padding: variables.$card-padding; 
 }
 
-.footer-tittles {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 1.5em;
-    letter-spacing: .125rem;
+.calendar th {
+    background-color: variables.$dark-bg; 
+    color: white;
 }
 
-.logo-footer {
-    max-width: 6.25rem;
+.calendar td {
+    height: 5rem;
 }
 
-.social-links img {
-    width: 1.875rem;
-    height: 1.875rem;
-    object-fit: contain;
+.hoy {
+    background-color: variables.$primary-color; 
+    color: white;
+    font-weight: bold;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
+/* ¿POR QUE SOTER? */
+.why-soter {
+    display: flex;
+    align-items: start; 
 }
+
+.why-soter figure {
+    display: inline-block;
+    max-width: 40%;
+}
+
+.why-soter img {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    box-shadow: 0 .25rem .5rem rgb(0, 0, 0);
+}
+
+.why-soter article {
+    display: inline-block;
+    width: 55%;
+}
+
+.border-image {
+    border-radius: variables.$border-radius; 
+}
+
+//CONTACTO
+.contact {
+    @include mixings.flex-center;
+  
+    form {
+        @include mixings.card-box;
+        width: 100%;
+        max-width: 37.5rem;
+      
+        .contact-tittle {
+          @include mixings.section-title;
+          font-size: 1.8em; // opcional si querés mantenerlo más chico
+        }
+  
+      label {
+        font-family: variables.$font-family-roboto;
+        display: block;
+        margin: .625rem 0 .3125rem;
+        font-size: 1em;
+        color: #555;
+      }
+  
+      input,
+      select,
+      textarea {
+        width: 90%;
+        padding: .625rem;
+        margin-bottom: .9375rem;
+        border: .0625rem solid #ddd;
+        border-radius: .25rem;
+        font-size: 1em;
+        color: #333;
+      }
+  
+      textarea {
+        resize: none;
+      }
+  
+      .center-div {
+        text-align: center;
+      }
+  
+      .submit-button {
+        background-color: variables.$primary-color !important;
+        color: #fff;
+        padding: .625rem 1.25rem;
+        font-size: 1em;
+        border: none;
+        border-radius: .25rem;
+        cursor: pointer;
+        width: 30%;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: variables.$green-primary !important;
+        }
+      }
+    }
+  }
+
+//NOSOTROS
+.about-main {
+    padding: 2.5rem;
+    background-color: #f9f9f9;
+  }
+  
+  .subtittle-about {
+    font-family: variables.$font-family-raleway;
+    font-size: 4em;
+    text-align: center;
+    color: variables.$primary-color;
+    text-transform: uppercase;
+  }
+  
+  .about-story {
+    @include mixings.card-box;
+    margin-bottom: 2.5rem;
+  
+    .story-content {
+      @include mixings.flex-center(space-between, center);
+    }
+  
+    .story-image {
+      width: 35%;
+      padding-left: 1.25rem;
+  
+      img {
+        @include mixings.responsive-img;
+      }
+    }
+  }
+  
+  .about-mission {
+    @include mixings.card-box;
+  
+    .mission-content {
+      color: variables.$font-color-light;
+      line-height: 1.6;
+    }
+  }
