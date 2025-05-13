@@ -94,7 +94,7 @@ button:hover {
 }
 #banner .title-container #bannerTittle .highlight {
   color: #27AE60;
-  font-size: #27AE60;
+  font-size: 4.4rem !important;
   text-shadow: 0.25rem 0.25rem 0.125rem rgba(43, 156, 52, 0.349);
 }
 
