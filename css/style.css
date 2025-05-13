@@ -28,30 +28,7 @@ AZUL MARINO: #1E3888
     font-size: .88rem;  <--- este seria el tamaño referencia para EM
 }
 */
-/* CLASES */
-/*
-.subtittles{
-    font-family: "Raleway", sans-serif;
-    font-size: 3.5em;
-    padding:2.5rem;
-    text-align: center;
-    color: #27AE60;
-    text-transform: uppercase;
-}
 
-.content-p{
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5em;
-}
-
-strong{
-    font-size: 1.32rem;
-}
-
-.padding-section{
-    padding: 2.5rem ;
-}
-*/
 /*NAVBAR*/
 /*
 #logo { 
@@ -376,9 +353,33 @@ textarea {
     line-height: 1.6;
 } */
 
+/* CLASES */
+/*
+.subtittles{
+    font-family: "Raleway", sans-serif;
+    font-size: 3.5em;
+    padding:2.5rem;
+    text-align: center;
+    color: #27AE60;
+    text-transform: uppercase;
+}
+
+.content-p{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+}
+
+strong{
+    font-size: 1.32rem;
+}
+
+.padding-section{
+    padding: 2.5rem ;
+}
+*/
 /*MODIFICACIONES BOOTSTRAP*/
 
-.navbar-toggler {
+/* .navbar-toggler {
     border: none !important; 
 }
 
@@ -402,4 +403,4 @@ button:hover {
 
 .accordion-button:not(.collapsed) {
     background-color: #baffd7 !important;
-} 
+}  */

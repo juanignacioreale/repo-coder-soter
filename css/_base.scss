@@ -11,7 +11,7 @@
 
 // Tipografía
 body {
-    font-family: variables.$font-family-roboto; // Usa el prefijo 'variables.'
+    font-family: variables.$font-family-roboto  !important; // Usa el prefijo 'variables.'
 }
 
 // Clases Generales
@@ -27,3 +27,53 @@ strong {
 .padding-section {
     padding: 2.5rem;
 }
+
+//CLASES
+.subtittles {
+    font-family: variables.$font-family-raleway;
+    font-size: variables.$font-size-large;
+    padding: 2.5rem;
+    text-align: center;
+    color: variables.$primary-color;
+    text-transform: uppercase;
+}
+
+.content-p {
+    font-family: variables.$font-family-roboto;
+    font-size: variables.$font-size-base;
+}
+
+strong {
+    font-size: 1.32rem;
+}
+
+.padding-section {
+    padding: 2.5rem;
+}
+
+//MODIFICACIONES DEL BOOTSTRAP
+.navbar-toggler {
+    border: none !important; 
+}
+
+button:hover {
+    background-color: transparent !important;
+}
+
+.navbar-toggler {
+    padding: 0 !important; 
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #baffd7 !important;
+} 
