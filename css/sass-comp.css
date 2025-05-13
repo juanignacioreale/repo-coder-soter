@@ -1,5 +1,194 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0.88rem;
+  box-sizing: border-box;
+}
+
 body {
+  font-family: "Roboto", sans-serif;
+}
+
+.content-p {
+  font-size: 1.5em;
+}
+
+strong {
+  font-size: 1.32rem;
+}
+
+.padding-section {
+  padding: 2.5rem;
+}
+
+/* NAVBAR */
+#logo {
+  width: 6.25rem;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0.625rem;
+}
+
+.navbar-container {
+  flex-shrink: 0;
+}
+
+.navbar-nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5em;
+  color: white;
+  letter-spacing: 0.135rem;
+}
+
+.navbar-nav a:hover {
+  color: rgba(206, 206, 206, 0.699) !important;
+}
+
+.active {
+  border-bottom: 0.1875rem solid #27AE60 !important;
+  color: #ffffff !important;
+}
+
+/* BANNER */
+#banner {
+  background-image: url("../img/arquero2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+#bannerTittle {
+  color: #ddd;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 5em;
+}
+
+.highlight {
+  color: #27AE60;
+  font-size: 4.4rem;
+  text-shadow: 0.25rem 0.25rem 0.125rem rgba(43, 156, 52, 0.349);
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+}
+
+.footer-tittles {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 0.125rem;
+}
+
+.logo-footer {
+  max-width: 6.25rem;
+}
+
+.social-links img {
+  width: 1.875rem;
+  height: 1.875rem;
+  object-fit: contain;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* SECCION DE LAS CARDS */
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #eafaf1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-family: "Raleway", sans-serif !important;
+}
+
+.calendar {
+  width: 100%;
+  max-width: 80vw;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.calendar th, .calendar td {
+  border: 0.0625rem solid #ddd;
+  text-align: center;
+  padding: 0.625rem;
+}
+
+.calendar th {
+  background-color: #000;
+  color: white;
+}
+
+.calendar td {
+  height: 5rem;
+}
+
+.hoy {
   background-color: #27AE60;
+  color: white;
+  font-weight: bold;
+}
+
+/* ¿POR QUE SOTER? */
+.why-soter {
+  display: flex;
+  align-items: start;
+}
+
+.why-soter figure {
+  display: inline-block;
+  max-width: 40%;
+}
+
+.why-soter img {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  display: block;
+  box-shadow: 0 0.25rem 0.5rem rgb(0, 0, 0);
+}
+
+.why-soter article {
+  display: inline-block;
+  width: 55%;
+}
+
+.border-image {
+  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=sass-comp.css.map */

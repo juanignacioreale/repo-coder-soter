@@ -21,14 +21,15 @@ AZUL MARINO: #1E3888
 
 
 /* RESET CSS */
+/*
 *{
     margin: 0;
     padding: 0;
-    font-size: .88rem; /* <--- este seria el tamaño referencia para EM*/
+    font-size: .88rem;  <--- este seria el tamaño referencia para EM
 }
-
+*/
 /* CLASES */
-
+/*
 .subtittles{
     font-family: "Raleway", sans-serif;
     font-size: 3.5em;
@@ -50,9 +51,9 @@ strong{
 .padding-section{
     padding: 2.5rem ;
 }
-
+*/
 /*NAVBAR*/
-
+/*
 #logo { 
     width: 6.25rem;
     display: block;
@@ -94,9 +95,9 @@ strong{
     border-bottom: .1875rem solid #27AE60 !important;
     color: #ffffff !important;
 }
-
+*/
 /* BANNER */
-
+/*
 #banner {
     background-image: url('../img/arquero2.jpg');
     background-size: cover;
@@ -131,10 +132,10 @@ strong{
 
 #header__secondary{
     background-color: #212529;
-}
+} */
 
 /*SECCION DE LAS CARDS*/
-
+/*
 .icon-circle {
     width: 80px;
     height: 80px;
@@ -148,10 +149,10 @@ strong{
 .card-title{
     font-family: "Raleway", sans-serif !important;
 }
-
+*/
 
 /* SECCION DEL CALENDARIO */
-
+/*
 
 .calendar {
     width: 100%;
@@ -179,9 +180,10 @@ strong{
     background-color: #27AE60;
     color: white;
     font-weight: bold;
-}
+} */
 
 /* ¿POR QUE SOTER? */
+/*
 
 .why-soter {
     display: flex;
@@ -211,10 +213,11 @@ strong{
 
 }
 
-
+*/
 
 
 /* FOOTER */
+/*
 footer {
     background-color: #000;
   }
@@ -241,7 +244,7 @@ footer {
   }
 
 /* CONTACTO */
-
+/*
 .contact {
     display: flex;
     justify-content: center;
@@ -305,10 +308,10 @@ textarea {
 
 .submit-button:hover {
     background-color: #079e46 !important;
-}
+} */
 
 /* NOSOTROS */
-
+/*
 .about-main {
     padding: 2.5rem;
     background-color: #f9f9f9;
@@ -371,9 +374,10 @@ textarea {
 .mission-content {
     color: #333;
     line-height: 1.6;
-}
+} */
 
 /*MODIFICACIONES BOOTSTRAP*/
+
 .navbar-toggler {
     border: none !important; 
 }
@@ -398,4 +402,4 @@ button:hover {
 
 .accordion-button:not(.collapsed) {
     background-color: #baffd7 !important;
-}
+} 

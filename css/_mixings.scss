@@ -1,0 +1,21 @@
+// _mixings.scss
+@use 'variables';
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin button-style($bg-color) {
+    background-color: $bg-color;
+    color: white;
+    padding: .625rem 1.25rem;
+    font-size: 1em;
+    border-radius: .25rem;
+    cursor: pointer;
+  }
+  
+  @mixin box-shadow {
+    box-shadow: 0 .25rem .5rem $shadow-color;
+  }
+  

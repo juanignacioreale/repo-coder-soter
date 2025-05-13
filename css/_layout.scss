@@ -1,0 +1,73 @@
+// _layout.scss
+@use 'variables';
+
+/* SECCION DE LAS CARDS */
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: variables.$light-bg; // Prefijo 'variables.'
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    font-family: variables.$font-family-raleway !important; // Prefijo 'variables.'
+}
+
+.calendar {
+    width: 100%;
+    max-width: 80vw;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.calendar th, .calendar td {
+    border: .0625rem solid #ddd;
+    text-align: center;
+    padding: variables.$card-padding; // Prefijo 'variables.'
+}
+
+.calendar th {
+    background-color: variables.$dark-bg; // Prefijo 'variables.'
+    color: white;
+}
+
+.calendar td {
+    height: 5rem;
+}
+
+.hoy {
+    background-color: variables.$primary-color; // Prefijo 'variables.'
+    color: white;
+    font-weight: bold;
+}
+
+/* ¿POR QUE SOTER? */
+.why-soter {
+    display: flex;
+    align-items: start; 
+}
+
+.why-soter figure {
+    display: inline-block;
+    max-width: 40%;
+}
+
+.why-soter img {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    box-shadow: 0 .25rem .5rem rgb(0, 0, 0);
+}
+
+.why-soter article {
+    display: inline-block;
+    width: 55%;
+}
+
+.border-image {
+    border-radius: variables.$border-radius; // Prefijo 'variables.'
+}
